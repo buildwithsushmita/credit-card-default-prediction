@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hero_banner.png" alt="Credit Card Default Prediction" width="100%" height="180">
+  <img src="assets/banner.png" alt="Credit Card Default Prediction" width="100%" height="180">
 </p>
 
 <h1 align="center">Credit Card Default Prediction</h1>
