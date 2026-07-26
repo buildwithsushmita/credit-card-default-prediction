@@ -104,6 +104,10 @@ y_pred = model.predict(X_input)
 y_proba = model.predict_proba(X_input)[:, 1]
 
 # ========== HEADER ==========
+banner_path = os.path.join(BASE_DIR, "assets", "banner.png")
+if os.path.exists(banner_path):
+    st.image(banner_path, use_container_width=True)
+
 st.title("💳 Credit Card Default Prediction")
 st.caption(
     "5 ML classification models on the UCI Default of Credit Card Clients dataset (30,000 instances, 23 features)"
