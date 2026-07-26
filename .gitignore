@@ -1,0 +1,19 @@
+# Raw dataset (large file, downloaded by train_models.py)
+model/default_credit.xls
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Samples (not needed for deployment)
+samples/
