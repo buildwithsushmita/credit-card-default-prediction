@@ -5,6 +5,19 @@
 <h1 align="center">Credit Card Default Prediction</h1>
 
 <p align="center">
+  <strong>Predicting credit card payment defaults using classical ML models</strong>
+</p>
+
+<p align="center">
+  <a href="#problem-statement">Problem Statement</a> •
+  <a href="#dataset-description">Dataset</a> •
+  <a href="#github-repository-link">Repo</a> •
+  <a href="#models-used">Models & Results</a> •
+  <a href="#streamlit-app-features">App</a> •
+  <a href="#project-structure">Structure</a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/python-3.9+-blue?logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/streamlit-1.60-FF4B4B?logo=streamlit&logoColor=white" alt="Streamlit">
   <img src="https://img.shields.io/badge/scikit--learn-1.5-F7931E?logo=scikit-learn&logoColor=white" alt="scikit-learn">
@@ -12,17 +25,17 @@
 
 ---
 
-## a. Problem Statement
+## Problem Statement
 
 Predicting whether a credit card client will default on their payment next month, using historical payment data and client demographics from Taiwan (2005). This is a binary classification problem where the goal is to identify potential defaulters based on their credit history, demographic information, and past payment behavior.
 
+The entire pipeline, from data ingestion to an interactive web dashboard, is built as a single deployable application using Streamlit.
+
 ---
 
-## b. Dataset Description
+## Dataset Description
 
-**Name:** Default of Credit Card Clients
-
-**Source:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients)
+**Default of Credit Card Clients** from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients)
 
 | Property | Value |
 |----------|-------|
@@ -48,7 +61,7 @@ Predicting whether a credit card client will default on their payment next month
 
 ---
 
-## c. GitHub Repository Link
+## GitHub Repository Link
 
 **Repository:** [https://github.com/buildwithsushmita/credit-card-default-prediction](https://github.com/buildwithsushmita/credit-card-default-prediction)
 
@@ -56,7 +69,7 @@ Predicting whether a credit card client will default on their payment next month
 
 ---
 
-## d. Models Used
+## Models Used
 
 The following 5 classification models were implemented and evaluated on the same dataset using an 80/20 stratified train-test split:
 
@@ -65,6 +78,10 @@ The following 5 classification models were implemented and evaluated on the same
 3. K-Nearest Neighbor (kNN) Classifier
 4. Naive Bayes (Gaussian) Classifier
 5. Random Forest (Ensemble) Classifier
+
+<p align="center">
+  <img src="assets/model_comparison.png" alt="Model Comparison" width="85%">
+</p>
 
 ### Comparison Table
 
@@ -91,15 +108,18 @@ The following 5 classification models were implemented and evaluated on the same
 
 ## Streamlit App Features
 
-- **Dataset upload option (CSV):** Upload test data via the sidebar
-- **Model selection dropdown:** Choose any of the 5 trained models
-- **Display of evaluation metrics:** All 6 metrics (Accuracy, AUC, Precision, Recall, F1, MCC)
-- **Confusion matrix and classification report:** Visual heatmap + detailed per-class metrics
-- **All models comparison:** Side-by-side table and charts comparing all 5 models on current data
+| Feature | Description |
+|---------|-------------|
+| Dataset upload (CSV) | Upload test data via the sidebar |
+| Model selection dropdown | Choose any of the 5 trained models |
+| Evaluation metrics display | All 6 metrics (Accuracy, AUC, Precision, Recall, F1, MCC) |
+| Confusion matrix | Visual heatmap of predictions vs actual |
+| Classification report | Detailed per-class precision, recall, F1 |
+| All models comparison | Side-by-side table and charts on current data |
 
 ---
 
-## How to Run Locally
+## Quick Start
 
 ```bash
 # clone the repo
@@ -139,6 +159,19 @@ credit-card-default-prediction/
     ├── naive_bayes.pkl
     └── random_forest.pkl
 ```
+
+---
+
+## Tech Stack
+
+| Tool | Purpose |
+|------|---------|
+| Python | Core language |
+| scikit-learn | Model training and evaluation |
+| Streamlit | Interactive web dashboard |
+| pandas / NumPy | Data manipulation |
+| matplotlib / seaborn | Visualizations |
+| joblib | Model serialization |
 
 ---
 
