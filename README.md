@@ -65,7 +65,7 @@ The entire pipeline, from data ingestion to an interactive web dashboard, is bui
 
 **Repository:** [https://github.com/buildwithsushmita/credit-card-default-prediction](https://github.com/buildwithsushmita/credit-card-default-prediction)
 
-**Live Streamlit App:** [https://YOUR_APP_URL.streamlit.app](https://YOUR_APP_URL.streamlit.app)
+**Live Streamlit App:** [https://credit-card-default-prediction-uci.streamlit.app](https://credit-card-default-prediction-uci.streamlit.app)
 
 ---
 
